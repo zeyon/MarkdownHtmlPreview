@@ -17,9 +17,6 @@ Installation
 
 ### Installation via Sublime Package Control ###
 
-> ATTENTION: This package is not yet listed in Sublime Package Control.
-> I hope this will change in the near future
-
 1. Install the Sublime Package Control package: <https://sublime.wbond.net/installation>
 2. Use Package Control to install this package (MarkdownHtmlPreview)
 

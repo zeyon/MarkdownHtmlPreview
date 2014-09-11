@@ -15,8 +15,18 @@ e.g. a template for printing/PDF or some other template to upload a document to 
 Installation
 ------------
 
+### Installation via Sublime Package Control ###
+
+> ATTENTION: This package is not yet listed in Sublime Package Control.
+> I hope this will change in the near future
+
 1. Install the Sublime Package Control package: <https://sublime.wbond.net/installation>
 2. Use Package Control to install this package (MarkdownHtmlPreview)
+
+
+### Manual installation ###
+
+Clone the repostiory into your [Package Directory](http://sublimetext.info/docs/en/basic_concepts.html)
 
 
 Usage
@@ -43,7 +53,7 @@ create a new distribution file.
 	npm install -g bower
 	bower install
 
-2. Alter the `index.html` `main.css`
+2. Edit your template (`./src/index.html`, `./src/main.css` and `./src/main.js`)
 
 3. Re-build the template by running `gulp`
 

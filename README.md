@@ -8,7 +8,7 @@ Installation
 ------------
 
 1. Install the Sublime Package Control package: <https://sublime.wbond.net/installation>
-2. Use Package Control to install this package (GitHubMarkdownPreview)
+2. Use Package Control to install this package (MarkdownHtmlPreview)
 
 
 Usage

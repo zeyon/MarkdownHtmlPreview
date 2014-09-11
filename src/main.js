@@ -3,5 +3,5 @@ window.addEvent('domready', function() {
 	    hash = window.location.hash.substring(1),
 	    markdown = new Showdown.converter({extensions: ['table', 'github', 'prettify', 'twitter']});
 
-	body.set('html', markdown.makeHtml(body.get('html')));
+	body.set('html', markdown.makeHtml(body.getElement('pre').get('text')));
 });

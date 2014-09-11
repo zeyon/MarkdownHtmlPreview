@@ -4,6 +4,14 @@ Markdown HTML Preview for Sublime Text 2/3
 Purpose
 -------
 
+I love markdown and I use it for almost everything that's text-based. This plugin allows you
+to automatically inject your markdown document into an HTML page, some CSS and JavaScript
+magic allows you to view your document in your web browser.
+
+I prefer this method, since it allows me to use different HTML templates for different purposes,
+e.g. a template for printing/PDF or some other template to upload a document to the web.
+
+
 Installation
 ------------
 

@@ -1,5 +1,5 @@
 {
-  "name"       : "Markdown HTML Preview",
+  "name"       : "MarkdownHtmlPreview",
   "author"     : "Peter Haider <peter.haider@zeyos.com>",
   "description": "A simple markdown viewer based on Showdown JS",
   "version"    : "0.1.0",
@@ -12,11 +12,12 @@
     "sublimetext"
   ],
   "dependencies": {
-    "gulp"           : "*",
-    "gulp-watch"     : "*",
-    "gulp-concat"    : "*",
-    "gulp-uglify"    : "*",
-    "gulp-minify-css": "*"
+    "gulp"              : "*",
+    "gulp-watch"        : "*",
+    "gulp-concat"       : "*",
+    "gulp-uglify"       : "*",
+    "gulp-minify-css"   : "*",
+    "gulp-batch-replace": "*"
   },
   "engines"     : {
     "node": "*"

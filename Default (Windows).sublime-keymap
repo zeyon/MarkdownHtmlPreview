@@ -1,0 +1,7 @@
+[
+    {
+      "keys": ["ctrl+shift+m"],
+      "command": "markdown_html_preview",
+      "context": [ { "key": "selector", "operator": "equal", "operand": "text.html.markdown" } ]
+    }
+]

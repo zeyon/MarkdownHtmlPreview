@@ -21,6 +21,25 @@ Install the plugin an use the following shortcut to preview the file:
 You can of course alter the key bindings in your Sublime Text settings.
 
 
+Template
+--------
+
+You can easily change and update the styles and layout of your HTML template.
+Simply edit the code in the `<packagedir>/src/` directory and use Gulp to
+create a new distribution file.
+
+1. Install dependencies:
+
+	<install node.js>
+	npm install
+	npm install -g bower
+	bower install
+
+2. Alter the `index.html` `main.css`
+
+3. Re-build the template by running `gulp`
+
+
 License
 -------
 

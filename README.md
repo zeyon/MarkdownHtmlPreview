@@ -18,12 +18,14 @@ Installation
 ### Installation via Sublime Package Control ###
 
 1. Install the Sublime Package Control package: <https://sublime.wbond.net/installation>
-2. Use Package Control to install this package (MarkdownHtmlPreview)
+2. Use Package Control to install this package (Markdown HTML Preview)
 
 
 ### Manual installation ###
 
 Clone the repostiory into your [Package Directory](http://sublimetext.info/docs/en/basic_concepts.html)
+
+Make sure you name the directory `Markdown HTML Preview`!
 
 
 Usage

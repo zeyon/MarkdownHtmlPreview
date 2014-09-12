@@ -25,7 +25,7 @@ Installation
 
 Clone the repostiory into your [Package Directory](http://sublimetext.info/docs/en/basic_concepts.html)
 
-Make sure you name the directory `Markdown HTML Preview`!
+Make sure you name the directory `Markdown HTML Preview`
 
 
 Usage
@@ -45,16 +45,17 @@ You can easily change and update the styles and layout of your HTML template.
 Simply edit the code in the `<packagedir>/src/` directory and use Gulp to
 create a new distribution file.
 
-1. Install dependencies:
+1. Download and install [node.js](http://nodejs.org/)
 
-	<install node.js>
+2. Open a shell in the plugin directory and install dependencies:
+
 	npm install
 	npm install -g bower
 	bower install
 
-2. Edit your template (`./src/index.html`, `./src/main.css` and `./src/main.js`)
+3. Edit your template (`./src/index.html`, `./src/main.css` and `./src/main.js`)
 
-3. Re-build the template by running `gulp`
+4. Re-build the template by running `gulp`
 
 
 License

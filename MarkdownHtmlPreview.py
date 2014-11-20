@@ -39,7 +39,7 @@ def call_exe(command, dir):
 def generate_preview(text):
     templatefile = open(os.path.join(sublime.packages_path(), "Markdown HTML Preview", "dist", "index.html"), "r")
     html = templatefile.read()
-    return html.replace("%%%CONTENT%%%", text.encode('utf-8', 'ignore'))
+    return html.replace("%%%CONTENT%%%", text.encode('utf-8', 'ignore').replace('<', '&lt;').replace('>', '&gt;'))
 
 class markdown_html_preview_command(sublime_plugin.TextCommand):
     def run(self, edit):

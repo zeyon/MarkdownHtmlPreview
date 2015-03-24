@@ -39,6 +39,11 @@ def call_exe(command, dir):
 def generate_preview(text):
     templatefile = open(os.path.join(sublime.packages_path(), "Markdown HTML Preview", "dist", "index.html"), "r")
     html = templatefile.read()
+
+    # No encoding for ST3
+    if int(sublime.version()) > 3000:
+        return html.replace("%%%CONTENT%%%", text.replace('<', '&lt;').replace('>', '&gt;'))
+
     return html.replace("%%%CONTENT%%%", text.encode('utf-8', 'ignore').replace('<', '&lt;').replace('>', '&gt;'))
 
 class markdown_html_preview_command(sublime_plugin.TextCommand):
@@ -47,7 +52,12 @@ class markdown_html_preview_command(sublime_plugin.TextCommand):
             selection = sublime.Region(0, self.view.size())
             html = generate_preview(self.view.substr(selection))
             temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.html')
-            temp_file.write(html)
+
+            if int(sublime.version()) > 3000:
+                temp_file.write(bytes(html, 'UTF-8'))
+            else:
+                temp_file.write(html)
+
             temp_file.close()
             webbrowser.open("file://" + temp_file.name)
         except Exception as e:

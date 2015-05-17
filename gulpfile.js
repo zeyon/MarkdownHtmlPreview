@@ -41,11 +41,19 @@ gulp.task('html', ['js', 'css'], function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('watch', ['html'], function() {
+gulp.task('py', ['html'], function () {
+  return gulp.src('./src/MarkdownHtmlPreview.py')
+    .pipe(replace([
+      ['%%%HTML%%%' , fs.readFileSync('./dist/index.html', 'utf8').replace(new RegExp('\\\\', 'g'), '\\\\')],
+    ]))
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('watch', ['html', 'py'], function() {
   watch('./src/*', function(files) {
     gulp.run('html');
   });
 });
 
-gulp.task('default', ['html']);
+gulp.task('default', ['py']);
 

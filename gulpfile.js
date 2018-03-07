@@ -9,8 +9,11 @@ var gulp      = require('gulp'),
 var path = {
   js  : [
     './bower_components/mootools/dist/mootools-core.js',
-    './bower_components/showdown/src/showdown.js',
-    './bower_components/showdown/src/extensions/*.js',
+    './bower_components/showdown/dist/showdown.js',
+    './bower_components/showdown-table/dist/showdown-table.js',
+    './bower_components/showdown-prettify/dist/showdown-prettify.js',
+    './bower_components/showdown-github/dist/showdown-github.js',
+    // './bower_components/showdown/src/extensions/*.js',
     './src/main.js'
   ],
   css : [

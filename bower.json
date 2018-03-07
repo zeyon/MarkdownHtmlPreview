@@ -2,7 +2,10 @@
   "name"         : "MarkdownViewer",
   "version"      : "0.1.0",
   "dependencies" : {
-    "showdown"            : "https://github.com/dapepe/showdown.git",
+    "showdown"            : "~1.8.6",
+    "showdown-github"     : "~1.0.0",
+    "showdown-table"      : "~1.0.1",
+    "showdown-prettify"   : "~1.0.2",
     "github-markdown-css" : ">=0.2.0",
     "mootools"            : ">=1.5.1"
   }
